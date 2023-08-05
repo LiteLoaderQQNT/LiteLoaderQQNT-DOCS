@@ -2,60 +2,65 @@
  * @Author: Night-stars-1 nujj1042633805@gmail.com
  * @Date: 2023-05-23 15:45:31
  * @LastEditors: Night-stars-1 nujj1042633805@gmail.com
- * @LastEditTime: 2023-07-30 23:57:14
+ * @LastEditTime: 2023-08-04 22:14:36
  * @Description: 
  * 
  * Copyright (c) 2023 by Night-stars-1, All Rights Reserved. 
 -->
-# 指南
+# LiteLoaderQQNT
 
-## 友情提示
- * 教程已经写了很多了，请认真看完这个页面的安装教程，他并没有多少字，严格安装步骤操作不会出错，如果你没有认真看完麻烦不要进群询问，这是浪费别人时间
- 
-## 重要提示
-::: danger 警告
-本软件是一个外部工具旨在自动化崩坏星轨的游戏玩法。它被设计成仅通过现有用户界面与游戏交互,并遵守相关法律法规。该软件包旨在提供简化和用户通过功能与游戏交互,并且它不打算以任何方式破坏游戏平衡或提供任何不公平的优势。该软件包不会以任何方式修改任何游戏文件或游戏代码。
+LiteLoaderQQNT是一个QQNT的插件加载器  
+它可以让你自由地为QQNT添加各种插件  
+比如：美化主题，增加功能，做任何事情 等...
 
-This software is open source, free of charge and for learning and exchange purposes only. The developer team has the final right to interpret this project. All problems arising from the use of this software are not related to this project and the developer team. If you encounter a merchant using this software to practice on your behalf and charging for it, it may be the cost of equipment and time, etc. The problems and consequences arising from this software have nothing to do with it.
-
-本软件开源、免费，仅供学习交流使用。开发者团队拥有本项目的最终解释权。使用本软件产生的所有问题与本项目与开发者团队无关。若您遇到商家使用本软件进行代练并收费，可能是设备与时间等费用，产生的问题及后果与本软件无关。
+Telegram闲聊群：[https://t.me/LiteLoaderQQNT](https://t.me/LiteLoaderQQNT)
 
 
-请注意，根据MiHoYo的 [崩坏:星穹铁道的公平游戏宣言](https://sr.mihoyo.com/news/111246?nav=news&type=notice):
-```md:no-line-numbers
-严禁使用外挂、加速器、脚本或其他破坏游戏公平性的第三方工具。
-一经发现，米哈游（下亦称“我们”）将视违规严重程度及违规次数，采取扣除违规收益、冻结游戏账号、永久封禁游戏账号等措施。
+## 注意事项
+::: tip 注意
+- 本项目仍在开发当中，可能会存在一些问题和不足
+- 仅为个人兴趣而制作，开发目的在于学习和探索
+- 能力有限，随缘更新。不过也欢迎各位来提交PR
+- 由于项目特殊性，必要时会停止开发或删除仓库
+:::
+
+## 安装方法
+
+[安装教程](install)
+
+## 插件开发
+
+如需上架插件市场，要使用最新的manifest格式（建议参考已上架插件，文件来源可使用仓库源码，也可用Release指定文件）  
+并在Github开源，需要打包的插件请在仓库发布Release，文件尽量使用Github Actions打包  
+插件模板：[LiteLoaderQQNT-Plugin-Template](https://github.com/mo-jinran/LiteLoaderQQNT-Plugin-Template)  
+插件仓库：[LiteLoaderQQNT-Plugin-List](https://github.com/mo-jinran/LiteLoaderQQNT-Plugin-List)
+
+> Windows QQNT 9.8.5版本及以上暂时无法打开自身的DevTools  
+> 请安装Chii Devtools插件（推荐）或QQNT vConsole插件进行调试
+
+
+## 数据目录
+
+LiteLoaderQQNT的默认数据文件夹在`用户目录/Documents/LiteLoaderQQNT`  
+修改环境变量`LITELOADERQQNT_PROFILE`可指定目录位置
+
+数据目录结构：
 ```
-:::
+LiteLoaderQQNT
+    ├─plugins           // 插件本体目录
+    │   ├─my-plugin         // 插件本体
+    │   └─...
+    ├─plugins_cache     // 插件缓存目录
+    │   ├─my-plugin
+    │   └─...
+    ├─plugins_data      // 插件数据目录
+    │   ├─my-plugin
+    │   └─...
+    └─config.json       // LiteLoader配置文件
+```
 
-## Python的安装
- * 点击[绿色部分](https://www.python.org/downloads/release/python-3113/)安装Python3.11
- * 将页面拉至底部，下载`Windows installer (64-bit)`
- * 点击安装包进行安装
- * 勾选`Add Python 3.x to PATH`
- <img src="https://img06.mifile.cn/v1/MI_542ED8B1722DC/126cb397275a9756877965f2b16313e1.png" alt="foo">
 
-## 启动星穹铁道小助手
-::: warning 注意
-如果你是Win10用户，建议先下载这个[Windows Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701)
-:::
- * 下载最新版[Auto_Star_Rail](https://github.com/Night-stars-1/Auto_Star_Rail/releases/latest)
- * 解压文件，并进入文件夹
- * 复制文件夹路径
- * 右键开始菜单，选择`终端管理员`，输入`cd 刚刚复制的路径`
- * 输入`pip config set global.index-url https://mirrors.aliyun.com/pypi/simple`设置国内pip源
- * 输入`pip install -r requirements.txt`安装依赖
- * 输入`Python Honkai_Star_Rail.py`运行星穹铁道小助手
-**ps: 输入`Python Honkai_Star_Rail.py -h`可以看见命令行快速启动信息**
+## 开源协议
 
-## 快速启动
- * 下载地址[快速启动](https://github.com/Starry-Wind/StarRailAssistant/releases/tag/快速启动)
- * `env.bat`为依赖安装脚本
- * `start.exe`为快速启动脚本
- 
-**ps: 所有文件请放在项目根目录执行**
-
-## 适合小白的启动方式
- * **我们不推荐这种启动方式，如果你按照上面的教程实在无法启动再使用**
- * 下载[QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=xdCO46fHlVcY7D2L7elXzqcxL3nyTGnW&jump_from=webapi&authKey=uWZooQ2szv+nG/re7luCKn8LW1KibSb0vvi0FycA45Mglm5AGM1GP2iJ+SiWmDwg)的`星穹铁道小助手.exe`然后双击运行，他在`整合包`文件夹中
- * **ps: 第一次启动可能会报错，请重新启动**
+[MIT License](./LICENSE)  
+Copyright (c) 2023 沫烬染
