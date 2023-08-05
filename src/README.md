@@ -109,4 +109,5 @@ highlights:
         link: https://github.com/MUKAPP/LiteLoaderQQNT-MSpring-Theme
 
 copyright: false
+footer: false
 ---
