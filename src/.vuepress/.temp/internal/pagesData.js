@@ -7,6 +7,8 @@ export const pagesData = {
   "v-e45cc9ec": () => import(/* webpackChunkName: "v-e45cc9ec" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/guide/install.html.js").then(({ data }) => data),
   // path: /plugin/
   "v-4dabea43": () => import(/* webpackChunkName: "v-4dabea43" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/plugin/index.html.js").then(({ data }) => data),
+  // path: /plugin/LLAPI.html
+  "v-68b2ab22": () => import(/* webpackChunkName: "v-68b2ab22" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/plugin/LLAPI.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
 }

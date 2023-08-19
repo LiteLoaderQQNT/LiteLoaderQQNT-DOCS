@@ -85,6 +85,7 @@ var resolveLocalePath = (locales, routePath) => {
 };
 var resolveRoutePathFromUrl = (url, base = "/") => {
   const pathname = url.replace(/^(https?:)?\/\/[^/]*/, "");
+  console.log(pathname.startsWith(base) ? `/${pathname.slice(base.length)}` : pathname);
   return pathname.startsWith(base) ? `/${pathname.slice(base.length)}` : pathname;
 };
 export {

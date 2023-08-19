@@ -1,1 +1,1 @@
-export const sidebarData = {"/guide/":["install","index"],"/plugin/":["index"]};
+export const sidebarData = {"/guide/":["install","index"],"/plugin/":["index","LLAPI"]};

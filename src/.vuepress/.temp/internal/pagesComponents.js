@@ -9,6 +9,8 @@ export const pagesComponents = {
   "v-e45cc9ec": defineAsyncComponent(() => import(/* webpackChunkName: "v-e45cc9ec" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/guide/install.html.vue")),
   // path: /plugin/
   "v-4dabea43": defineAsyncComponent(() => import(/* webpackChunkName: "v-4dabea43" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/plugin/index.html.vue")),
+  // path: /plugin/LLAPI.html
+  "v-68b2ab22": defineAsyncComponent(() => import(/* webpackChunkName: "v-68b2ab22" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/plugin/LLAPI.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/404.html.vue")),
 }
