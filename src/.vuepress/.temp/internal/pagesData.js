@@ -1,6 +1,6 @@
 export const pagesData = {
-  // path: /
-  "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
+  // path: /README.html
+  "v-5aa7f752": () => import(/* webpackChunkName: "v-5aa7f752" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/README.html.js").then(({ data }) => data),
   // path: /guide/
   "v-fffb8e28": () => import(/* webpackChunkName: "v-fffb8e28" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/guide/index.html.js").then(({ data }) => data),
   // path: /guide/install.html
@@ -11,4 +11,6 @@ export const pagesData = {
   "v-68b2ab22": () => import(/* webpackChunkName: "v-68b2ab22" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/plugin/LLAPI.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
+  // path: /
+  "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"H:/项目/LiteLoaderQQNT/src/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
 }
