@@ -45,11 +45,6 @@ highlights:
       background-repeat: repeat
       background-size: initial
     features:
-      - title: 轻量工具箱
-        icon: https://github.com/xiyuesaves/lite_tools/raw/v3/icon.png
-        details: 添加了一些能提升使用体验的功能
-        link: https://github.com/xiyuesaves/lite_tools/tree/v3
-
       - title: Markdown-it
         icon: https://raw.githubusercontent.com/d0j1a1701/LiteLoaderQQNT-Markdown/v3/icon.png
         details: 为 QQnt 增加 Markdown 渲染功能！
@@ -86,7 +81,7 @@ highlights:
       - title: 窗口置顶
         icon: https://raw.githubusercontent.com/mo-jinran/window-on-top/v3/icon.png
         details: 添加窗口置顶按钮
-        link: https://github.com/xmo-jinran/window-on-top
+        link: https://github.com/mo-jinran/window-on-top
 
       - title: 自定义 CSS 样式
         icon: https://raw.githubusercontent.com/xh321/LiteLoaderQQNT-Custom-CSS/master/icon.png
