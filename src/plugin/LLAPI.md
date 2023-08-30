@@ -2,7 +2,7 @@
  * @Author: Night-stars-1 nujj1042633805@gmail.com
  * @Date: 2023-08-19 13:57:11
  * @LastEditors: Night-stars-1 nujj1042633805@gmail.com
- * @LastEditTime: 2023-08-30 21:58:29
+ * @LastEditTime: 2023-08-30 22:34:39
  * @Description: 
  * 
  * Copyright (c) 2023 by Night-stars-1, All Rights Reserved. 
@@ -181,7 +181,7 @@
 - **用法**
 
     ```js
-    await LLAPI.getAccountInfo(114514)
+    await LLAPI.getAccountInfo()
     ```
 
 ## __func__ `LLAPI.getUserInfo(uid)`
@@ -204,7 +204,7 @@
 - **用法**
 
     ```js
-    await LLAPI.getUserInfo()
+    await LLAPI.getUserInfo(114514)
     ```
 
 ## __func__ `LLAPI.getPeer()`
