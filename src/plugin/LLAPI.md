@@ -2,7 +2,7 @@
  * @Author: Night-stars-1 nujj1042633805@gmail.com
  * @Date: 2023-08-19 13:57:11
  * @LastEditors: Night-stars-1 nujj1042633805@gmail.com
- * @LastEditTime: 2023-08-19 14:34:17
+ * @LastEditTime: 2023-08-30 21:58:29
  * @Description: 
  * 
  * Copyright (c) 2023 by Night-stars-1, All Rights Reserved. 
@@ -170,7 +170,7 @@
 
 - **参数**
 
-    empty
+    - uid(number): QQ号
 
 - **返回**
 
@@ -181,10 +181,10 @@
 - **用法**
 
     ```js
-    await LLAPI.getAccountInfo()
+    await LLAPI.getAccountInfo(114514)
     ```
 
-## __func__ `LLAPI.getUserInfo()`
+## __func__ `LLAPI.getUserInfo(uid)`
 
 - **说明**
 
