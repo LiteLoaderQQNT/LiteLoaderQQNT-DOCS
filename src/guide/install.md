@@ -21,7 +21,7 @@
 
 ### 使用Release安装（推荐）
 
-1. 下载[Release](https://github.com/mo-jinran/LiteLoaderQQNT/releases/latest)中的`iteLoaderQQNT.zip`，解压出`LiteLoader`文件夹并放到`安装位置`
+1. 下载[Release](https://github.com/mo-jinran/LiteLoaderQQNT/releases/latest)中的`LiteLoaderQQNT.zip`，解压出`LiteLoader`文件夹并放到`安装位置`
 2. 编辑`安装位置/package.json`文件，将`main`键值改为`LiteLoader`（如果使用Launcher请跳过）
 3. 重新启动QQNT，享受LiteLoaderQQNT带来的乐趣吧！
 
@@ -47,7 +47,7 @@
 ```
 
 QQNT的package.json文件示例：
-```
+```json
 {
     ...
     "homepage": "https://im.qq.com",
